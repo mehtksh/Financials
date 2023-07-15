@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+build
+.git
+*.md
+.gitignore
+sonar-project.properties
+package-lock.json
+yarn.lock
+analysis.bat
+sonar-project.properties
+package-lock.json
+yarn.lock
+analysis.bat

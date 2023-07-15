@@ -1,0 +1,389 @@
+.fin-group-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fin-groups {
+    margin-right: 1rem;
+}
+
+.fin-groups-icon {
+    margin-right: 0.5rem;
+}
+
+.fin-line-items {
+    width: 50%;
+    border: 1px solid var(--neutral-gray-10);
+    display: flex;
+    align-items: center;
+}
+
+.fin-create-groups {
+    width: 50%;
+    border: 1px solid var(--neutral-gray-10);
+    border-left: none;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 14px 0px 14px 16px;
+    background: var(--neutral-gray-02);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.fin-lineitems-groups-main {
+    display: flex;
+}
+
+.fin-upload-crossicon {
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+    color: var(--neutral-gray-60);
+}
+
+.nep-card-group-scroller .nep-card-group-grid .fin-line-items {
+    display: flex !important;
+}
+
+.fin-lineitem-card {
+    width: 50%;
+    border: 1px solid var(--neutral-gray-10);
+    border-right: none;
+    border-radius: 0px !important;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+
+.fin-groups-card {
+    height: calc(100vh - 251px);
+    width: 50%;
+    border: 1px solid var(--neutral-gray-10);
+    border-right: 1px solid var(--neutral-gray-10);
+    border-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.fin-lineitem-body {
+    padding: 0px !important;
+}
+
+.group-lineitem-header {
+    background: var(--neutral-gray-02) !important;
+    border-top-right-radius: 0px !important;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    color: var(--neutral-gray-60);
+    font-weight: var(--table-head-font-weight, bold);
+    font-family: "Helvetica Neue LT W05 75 Bold";
+}
+
+.group-groups-header {
+    background: var(--neutral-gray-02) !important;
+    border-top-right-radius: 4px !important;
+    border-top-left-radius: 0px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--neutral-gray-60);
+    font-weight: var(--table-head-font-weight, bold);
+    font-family: "Helvetica Neue LT W05 75 Bold";
+}
+
+.groups-no-entries {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nep-card-group-scroller .nep-card-group-grid .nep-card-group-item:hover {
+    background: var(--primary-blue-35);
+    cursor: pointer;
+}
+
+.nep-card-group-scroller .nep-card-group-grid .nep-card-group-item:active {
+    background: var(--primary-blue-40);
+}
+
+.groups-cancel-icon {
+    height: 1rem;
+    width: 1rem;
+    color: var(--negative-red-100);
+    margin-right: 8px;
+}
+
+.groups-check-icon {
+    height: 1rem;
+    width: 1rem;
+    color: var(--positive-green-100);
+}
+
+.group-card-header {
+    background: none !important;
+    align-items: center;
+    font-family: "Helvetica Neue LT W05 65 Medium";
+}
+
+.group-card-header .nep-card-indicator {
+    width: 1rem;
+    height: 1rem;
+}
+
+.group-input {
+    width: 100%;
+    margin-right: 1rem;
+}
+
+.groups-icon {
+    height: 1rem;
+    width: 1rem;
+}
+
+.groups-icon-area {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.groups-removing-line-item {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1px;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-top: 2px;
+    color: var(--neutral-gray-60);
+}
+
+.fin-groups-data {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--neutral-gray-10);
+    border-bottom: 0px;
+    border-left: 0px;
+    padding-left: 1rem;
+    border-right: 0px;
+}
+
+.fin-groups-data:last-child {
+    border-bottom: 1px solid var(--neutral-gray-10);
+}
+
+.fin-groups-data:hover {
+    background: var(--primary-blue-35);
+    cursor: pointer;
+}
+
+.fin-groups-data:hover div {
+    display: block;
+}
+
+.fin-groups-data div {
+    display: none;
+}
+
+.fin-groups-formula-btn {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.fin-groups-selection:hover {
+    border: dashed 1px !important;
+    border-color: var(--primary-blue-78) !important;
+    background: var(--primary-blue-35);
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.fin-groups-selection .nep-card-header .group-card-header:hover {
+    margin-bottom: 0px !important;
+}
+
+.nep-card-header {
+    margin-bottom: 0px !important;
+    border-bottom: 1px solid var(--neutral-gray-10);
+    border-top: 0px !important;
+}
+
+.fin-groups-data:first-child {
+    border-top: 0px !important;
+}
+
+.fin-groups-exapand-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--neutral-gray-10);
+    border-left: 0px !important;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.fin-groups-expand-icon {
+    height: 2rem;
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--neutral-gray-10);
+    border-left: 0px;
+    border-right: 0px;
+    cursor: pointer;
+    color: var(--neutral-gray-60);
+}
+
+.fin-groups-expand-icon:hover {
+    background: var(--primary-blue-35);
+}
+
+.fin-groups-collapse-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--neutral-gray-10);
+    border-right: 0px !important;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.fin-formula-card {
+    height: calc(100vh - 251px);
+    width: 50%;
+    border: 1px solid var(--neutral-gray-10);
+    border-radius: 0px !important;
+}
+
+.fin-formula-card-header {
+    background: var(--neutral-gray-02) !important;
+    font-family: "Helvetica Neue LT W05 75 Bold";
+    color: var(--neutral-gray-60);
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.groups-delete-icon-area {
+    margin-left: 0.5rem;
+}
+
+.fin-groups-formula-blank-state {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 350px);
+}
+
+.fin-groups-operators {
+    border-bottom: 1px solid var(--neutral-gray-10);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    color: var(--neutral-gray-60);
+}
+
+.fin-formula-operator-icons {
+    padding-left: 8px;
+    color: var(--neutral-gray-60);
+    width: 12px;
+    height: 12px;
+}
+
+.fin-formula-icon-main {
+    margin-top: 4px;
+}
+
+.groups-disable-collapse-icon {
+    cursor: not-allowed;
+    color: var(--neutral-gray-20) !important;
+}
+
+.nep-card-accordion .nep-card-header:hover {
+    background: var(--primary-blue-35) !important;
+}
+
+.groups-active-accordian-header {
+    background: var(--primary-blue-40) !important;
+}
+
+.formula-section {
+    padding: 1rem;
+    height: calc(100vh - 388px);
+    overflow: auto;
+    padding-top: 0px;
+}
+
+.fin-formula-suggestions {
+    height: calc(100vh - 300px);
+    overflow: hidden;
+}
+
+.fin-formula-active {
+    height: calc(100vh - 300px);
+    overflow: scroll;
+}
+
+.fin-formula-tag {
+    background: var(--neutral-gray-05);
+    border-radius: 20px;
+    color: var(--neutral-gray-80);
+    margin-right: 4px;
+    padding: 2px 4px 2px 12px;
+    margin-bottom: 4px;
+}
+
+.fin-formula-remove-icon {
+    height: 24px;
+    width: 24px;
+    padding: 4px;
+    border: none;
+    font-size: 1rem;
+    background: none;
+    cursor: pointer;
+}
+
+.fin-formula-tag-input-field {
+    border: none;
+    outline: none;
+}
+
+.fin-selected-tags {
+    border: 1px solid var(--neutral-gray-10);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.formula-selected-group {
+    padding: 1rem 0rem 0.25rem 1rem;
+    color: var(--primary-blue-78);
+    font-weight: 500;
+}
+
+.formula-name-duplicate-error-msg {
+    height: 70px !important;
+}
+
+.groups-error-formula-icon {
+    border: 1px solid var(--negative-red-100);
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+
+.groups-selected-formula-icon {
+    border-radius: 0.25rem;
+    background: var(--color-primary-primary-35);
+    display: flex;
+    align-items: center;
+}
+
+.nep-card-footer {
+    padding: 1rem 1.5rem;
+    border-top: none;
+    background: var(--neutral-gray-00);
+    border-radius: 0px 0px 8px 8px !important;
+    padding-top: 32px;
+}

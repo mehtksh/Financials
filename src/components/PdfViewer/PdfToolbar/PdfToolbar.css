@@ -1,0 +1,166 @@
+/* stylelint-disable */
+
+.pdfViewer__Toolbar {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-left: none !important;
+  border-top: none !important;
+}
+
+.schedule_toolBar {
+  width: 100% !important;
+}
+
+.input-page-num {
+  border-left: 1px solid #dedfe0;
+  height: 100%;
+}
+
+.pdfViewer__Toolbar_Child {
+  display: inline-flexbox;
+  vertical-align: middle;
+  height: 46px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.75rem;
+  background: var(--neutral-gray-02);
+}
+/* For searching highlighting the default PDFJS-Mozilla fonts are loaded so to counter our default style adding these */
+.textLayer {
+  opacity: 0.3 !important;
+  margin-left:-29px
+}
+.highlight {
+  letter-spacing: 0;
+  background-color: #ff0 !important;
+  font: inherit;
+}
+
+.highlight.selected {
+  background-color: #f4511e !important;
+}
+
+.navigateButton {
+  border-left: 1px solid #dedfe0;
+  border-width: 0px 0px 0px 1px;
+  border-color: #dedfe0;
+  text-align: center;
+  align-self: center;
+  padding: 10px;
+  height: 100%;
+}
+
+.navigateButton:nth-child(2n) {
+  border-width: 0px 1px;
+  border-color: #dedfe0;
+  /* border-style: solid; */
+}
+
+.lastNavigateButton {
+  border-width: 0px;
+  text-align: center;
+  align-self: center;
+  padding: 10px;
+  height: 100%;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+
+.lastNavigateButton > i[disabled],
+.navigateButton > i[disabled],
+.search_Textbox > i[disabled] {
+  pointer-events: none;
+  color: #cac9c7;
+}
+
+.pageInput {
+  background: var(--neutral-gray-00);
+  width: 50px;
+  height: 2rem;
+  margin-right: 4px;
+}
+
+.pageInput > input {
+  padding: 4px 10px !important;
+  text-align: center;
+}
+
+.pageInputError > input {
+  color: red;
+}
+
+.search_Textbox {
+  height: 2rem !important;
+  background: var(--neutral-gray-00) !important;
+  align-content: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 0px 16px 0px 0px !important;
+}
+
+.pdfViewer_Toolbar_Searchcount {
+  padding: 6px 16px 0px 0px;
+  border-width: 0px 1px 0px 0px;
+  border-color: #dedfe0;
+  border-style: solid;
+}
+
+.pdfViewer__Toolbar_pageOf {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.navigateButtonDisable {
+  color: #cac9c7 !important;
+  cursor: default;
+}
+
+.search_Textbox .icon-search {
+  cursor: default;
+}
+
+.pagenumber-viewer {
+  width: 6% !important;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.selectTableButton {
+  border-width: 0px;
+  text-align: center;
+  padding: 5px;
+  border-left: 1px solid #e0e0e0;
+  float: right !important;
+}
+
+.search-next {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border: 1px solid var(--neutral-gray-10);
+  margin-top: 8px;
+  justify-content: center;
+  background: var(--neutral-gray-00);
+}
+
+.search-box {
+  display: flex;
+  width: 40%;
+}
+.output-search {
+  display: flex;
+  width: 302px;
+  padding-right: 16px;
+  margin-left: 8px;
+}
+
+.output-next {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}

@@ -1,0 +1,215 @@
+/* stylelint-disable */
+/* The Viewer, pdfViewer (and sub children) classes are taken from the PDFjs-dist folder whcih define the text formating and
+ text overlay display. THey are provided by default by the PDF JS lib */
+
+.pdfViewer__container {
+  background-color: #f0f0f1;
+}
+
+.pdfViewer_main_container {
+  margin: 0px;
+  height: auto;
+  border-left: 0px;
+}
+
+.pdfViewer__right--column {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pdfViewer_identifier {
+  float: left;
+  width: 100%;
+}
+
+.identifier-container {
+  /* border-left: 1px solid #e0e0e0 !important; */
+  border-right: 1px solid var(--neutral-gray-10);
+  background-color: var(--neutral-gray-02);
+}
+
+.pdfViewer__title {
+  text-align: left;
+  margin-right: 4px; /* for border line alignment with below pdf display end */
+}
+
+.viewerpanel {
+  background-color: #f0f0f1;
+  width: inherit;
+  height: calc(100vh - 240px);
+  position: relative;
+  overflow: scroll;
+}
+.out-viewerpanel{
+  background-color: #f0f0f1;
+  width: inherit;
+  height: calc(100vh - 371px);
+  position: relative;
+  overflow: scroll;
+}
+
+.panel-identifier {
+  height: calc(100vh - 17.375rem) !important;
+  width: 97%;
+}
+
+.pdfViewer__Footer {
+  display: grid;
+  position: fixed;
+  bottom: 16px;
+  justify-content: flex-start;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+  padding: 10px;
+}
+
+.pdfViewer__thumbnails {
+  background-color: #fafafb;
+  height: 100%;
+}
+
+.page .textLayer > span[style] {
+  letter-spacing: 0em;
+}
+
+.pdfViewer_main_container .Viewer .pdfViewer {
+  background: #f0f0f1;
+}
+
+.pdfViewer_main_container .Viewer .pdfViewer .page {
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: gray;
+}
+
+.pdfViewer .page {
+  border: none !important;
+  display: flex;
+}
+
+.pdfViewer .page .textLayer {
+  left: 30px !important;
+}
+
+.pdfViewer .page .annotationLayer .highlightAnnotation {
+  background-color: transparent !important;
+}
+
+.cls-pdficon {
+  margin-right: 5px;
+  float: left;
+}
+
+.pdf-icon-title {
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+.pdfContainer .nep-card-body {
+  padding: 0px;
+}
+
+.pdfContainer .nep-card-header {
+  background-color: #fff;
+}
+
+.err--text {
+  text-align: center;
+}
+
+.pdfViewer--zoom {
+  position: absolute;
+  height: 96px;
+  width: 32px;
+  box-shadow: -2px 0px 4px #00000014;
+  border: 1px solid #dedfe0;
+  border-radius: 4px 0px 0px 4px;
+  top: calc(40vh - 48px);
+  right: 0px;
+  background: #fff;
+}
+
+.pdfViewer--zoom > * {
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdfViewer--zoom div:nth-child(2) {
+  border-top: 1px solid #dedfe0;
+  border-bottom: 1px solid #dedfe0;
+}
+
+.pdfViewer--zoom div:nth-child(3) {
+  cursor: pointer;
+}
+
+.clear-position {
+  right: 20px;
+  position: absolute;
+}
+
+.pdfviewer-modal {
+  width: 80% !important;
+  /* top: 10vh !important; */
+}
+.pdfviewer-modal .nep-card-body{
+  padding: 0;
+}
+.viewerpanel::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.viewerpanel::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* .pdf-filing-type {
+    height: 32px !important;
+    border-bottom: 1px solid #dedfe0 !important;
+  }
+
+  .pdf-filing-type:hover {
+    border-bottom: 1px solid #dedfe0 !important;
+  } */
+
+.pdf-filing-type .nep-select-drop-down .nep-select-result span {
+  font-family: "Helvetica Neue LT W05_65 Medium", sans-serif !important;
+  font-size: inherit;
+}
+
+/* .pdf-filing-type .nep-select-drop-down .nep-select-result {
+    padding: 6px 28px 0 0;
+  } */
+
+.pdf-icon-padding {
+  padding-right: 4px;
+}
+
+@media only screen and (max-height: 1050px) {
+  .panel-identifier {
+    height: calc(100vh - 230px);
+  }
+}
+
+@media only screen and (max-height: 850px) {
+  .panel-identifier {
+    height: calc(100vh - 200px);
+  }
+}
+
+@media only screen and (max-height: 850px) {
+  .panel-identifier-Btr {
+    height: calc(100vh - 250px) !important;
+  }
+}
+
+.viewerpanel-Btr {
+  background-color: #f0f0f1;
+  width: inherit;
+  height: calc(100vh - 290px);
+  overflow: scroll;
+}

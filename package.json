@@ -1,0 +1,149 @@
+{
+  "name": "Financials",
+  "version": "0.0.3",
+  "publisher": "ACUITY Knowledge Partner",
+  "private": true,
+  "homepage": ".",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode production --config dev.webpack.config.js",
+    "build:test": "webpack --mode production --config test.webpack.config.js",
+    "build:uat": "webpack --mode production --config uat.webpack.config.js",
+    "build:perf1": "webpack --mode production --config perf1.webpack.config.js",
+    "build:perf2": "webpack --mode production --config perf2.webpack.config.js",
+    "build:local": "webpack --mode development",
+    "build:start": "cd dist && PORT=3002 npx serve",
+    "start": "webpack serve --open --mode development",
+    "start:live": "webpack serve --open --mode development --live-reload --hot",
+    "test": "jest --env=jsdom ",
+    "lint": "eslint src/**/*.jsx src/**/*.js --no-error-on-unmatched-pattern",
+    "stylelint": "stylelint src/**/*.css",
+    "code-coverage": "set CI=true && jest  --env=jsdom  --coverage",
+    "format": "prettier  --write src/**/*.js src/**/*.jsx",
+    "commit": "npm run format && npm run lint && npm run stylelint && npm run code-coverage && analysis.bat",
+    "fp": "prettier  --write D:/Projects/Pipelines/S3/trunk/**/*.json D:/Projects/Pipelines/S3/trunk/**/*.js "
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run commit",
+      "pre-push": ""
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Acuity Knowledge Partners",
+    "email": "shankar.mahadevan@acuitykp.com"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "autoprefixer": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "eslint": "^8.33.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "fs": "^0.0.1-security",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.2",
+    "pdfjs-dist": "2.6.347",
+    "postcss": "^8.2.1",
+    "postcss-loader": "^4.1.0",
+    "prettier": "^2.8.3",
+    "react-icons": "^4.8.0",
+    "react-test-renderer": "^18.2.0",
+    "redux-mock-store": "^1.5.4",
+    "redux-saga-test-plan": "^4.0.6",
+    "style-loader": "^3.3.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard": "^29.0.0",
+    "webpack": "^5.57.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "@maknowledgeservices/neptune": "^2.2.34",
+    "@testing-library/react": "^13.4.0",
+    "axios": "^1.3.4",
+    "file-loader": "^6.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-redux": "^8.0.5",
+    "react-tag-input": "^6.8.1",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-saga": "^1.2.2",
+    "web-vitals": "^3.1.1",
+    "react-dnd": "^14.0.2",
+    "react-dnd-html5-backend": "^14.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "Ie 10",
+      "ie 11",
+      "last 1 ie version",
+      "last 1 edge version"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/public/",
+      "/src/index.js",
+      "/src/serviceWorker.js",
+      "/src/setupTests.js",
+      "/src/__test__/",
+      "/src/__mocks__/",
+      "/coverage",
+      "webpack.config.js",
+      "reportWebVitals.js",
+      "bootstrap.js",
+      "/src/components/PdfViewer/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 70,
+        "branches": 55,
+        "lines": 70,
+        "functions": 60
+      }
+    },
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!src/serviceWorker.js",
+      "!src/App.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  }
+}

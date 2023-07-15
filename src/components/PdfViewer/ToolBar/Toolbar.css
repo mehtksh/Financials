@@ -1,0 +1,128 @@
+.toolbar-container {
+  background-color: white;
+  border-bottom: 1px solid #dedfe0;
+  border-left: 1px solid #dedfe0;
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: auto auto auto;
+  justify-content: stretch;
+  align-items: center;
+  height: 40px !important;
+  min-height: 40px;
+}
+
+.no-left-border {
+  border-left: 0;
+}
+
+.schedule-identifier-right .toolbar-container {
+  height: unset;
+}
+.grid-item {
+  border-right: 1px solid #dedfe0;
+  align-content: space-between;
+}
+
+.grid-item-3 {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.grid-item-2 {
+  text-align: center;
+  width: 50%;
+  padding: 0;
+  border-left: 1px solid #dedfe0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container input {
+  padding-left: 1em;
+}
+
+.grid-item-search-img {
+  vertical-align: middle;
+}
+
+/* .grid-item-search > div:hover {
+  border-right: 1px solid var(--input-border-color, #cac9c7);
+} */
+
+.grid-item-search {
+  align-items: center;
+  grid-column: 1;
+  width: 100%;
+  align-self: end;
+  text-align: center;
+  height: 38px;
+}
+
+.grid-item-search *,
+.grid-item-pagination-search *,
+.grid-item-3 * {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.grid-item-pagination {
+  background: white;
+  box-sizing: border-box;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+.grid-item-3 .nep-button {
+  margin: 0 !important;
+  border-left: 0;
+  padding: 0;
+}
+
+.grid-item-pagination:hover:focus:active {
+  background: #e0e0e0;
+}
+
+.grid-item-pagination-search input {
+  justify-content: center;
+  width: 68px !important;
+  height: 100% !important;
+}
+
+.grid-item-pagination-search {
+  align-self: end;
+}
+
+i.icon-adobe-acrobat {
+  color: red;
+}
+
+.grid-button-pagination-length {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.grid-item-pagination-search > label,
+.grid-item-search > div:first-child {
+  border-radius: 0 !important;
+  height: inherit;
+}
+
+.grid-item-pagination-search > .nep-input-large input {
+  color: #55565a;
+}
+
+.nep-input-number-up,
+.nep-input-number-down {
+  display: none;
+}
+
+.first-button {
+  border-left: 1px solid #dedfe0 !important;
+}
+.last-botton {
+  border-right: 0 !important;
+}

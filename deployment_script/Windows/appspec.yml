@@ -1,0 +1,10 @@
+version: 0.0
+os: windows
+files:
+  - source: \UI\Financials\
+    destination: E:\inetpub\wwwroot\munibonds\Financials\UITest
+hooks:
+  BeforeInstall:
+    - location: .\UI\Financials\deployment_script\Windows\BeforeInstall.ps1
+  AfterInstall:
+    - location: .\UI\Financials\deployment_script\Windows\AfterInstall.ps1
